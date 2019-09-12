@@ -55,7 +55,7 @@ class block_displaymessage extends block_base {
 
         $this->content = new stdClass;
 
-        $this->content->text = get_config('message', 'message');
+        $this->content->text = get_config('message', 'fullmessage');
 
         $this->content->footer = '';
 

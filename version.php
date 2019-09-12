@@ -31,6 +31,6 @@
  * File : version.php
  * Version file
  */
-$plugin->version  = 2019091201;
+$plugin->version  = 2019091202;
 $plugin->requires = 2018051701;
 $plugin->component = 'block_displaymessage';

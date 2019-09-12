@@ -34,8 +34,14 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$settings->add(new admin_setting_heading(
+            'headerconfig',
+            get_string('headerconfig', 'block_displaymessage'),
+            get_string('descconfig', 'block_displaymessage')
+        ));
+
 $settings->add(new admin_setting_configtextarea(
-            'message',
+            'message/fullmessage',
             get_string('message', 'block_displaymessage'),
             get_string('displaymessage', 'block_displaymessage'),
             ''
