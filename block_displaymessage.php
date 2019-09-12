@@ -34,7 +34,7 @@
 
 defined('MOODLE_INTERNAL') || die;
 
-class block_demands extends block_base {
+class block_displaymessage extends block_base {
 
     public function init() {
 
