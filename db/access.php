@@ -51,14 +51,4 @@ $capabilities = array(
             'manager' => CAP_ALLOW
         ),
     ),
-
-    'block/block_displaymessage:editmessage' => array(
-        'riskbitmask' => RISK_SPAM | RISK_XSS,
-
-        'captype' => 'write',
-        'contextlevel' => CONTEXT_SYSTEM,
-        'archetypes' => array(
-            'manager' => CAP_ALLOW
-        ),
-    ),
 );
