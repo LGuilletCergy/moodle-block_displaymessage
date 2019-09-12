@@ -37,5 +37,6 @@ defined('MOODLE_INTERNAL') || die();
 $settings->add(new admin_setting_configtextarea(
             'message',
             get_string('message', 'block_displaymessage'),
+            get_string('displaymessage', 'block_displaymessage'),
             ''
         ));
