@@ -57,6 +57,14 @@ class block_displaymessage extends block_base {
 
         $this->content->text = get_config('message', 'fullmessage');
 
+        $systemcontext = context_system::instance();
+
+        if (has_capability(editmessage, $systemcontext)) {
+
+            $url = new moodle_url('admin/settings.php?section=blocksettingdisplaymessage');
+            $this->content->text .= "<br>$url";
+        }
+
         $this->content->footer = '';
 
         return $this->content;
