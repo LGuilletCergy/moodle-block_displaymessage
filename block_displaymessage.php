@@ -59,7 +59,7 @@ class block_displaymessage extends block_base {
 
         $systemcontext = context_system::instance();
 
-        if (has_capability(editmessage, $systemcontext)) {
+        if (has_capability('editmessage', $systemcontext)) {
 
             $url = new moodle_url('admin/settings.php?section=blocksettingdisplaymessage');
             $this->content->text .= "<br><a href=$url>".get_string('editmessage', 'block_displaymessage')."</a>";
